@@ -1,0 +1,34 @@
+html,body
+{
+    margin:0px;
+  }
+.full-screen-video-container
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.full-screen-video-container video
+{
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.full-screen-video-container .video-content
+{
+    font-size: 20px;
+    background-color: white;
+    color:#333;
+    margin-top: 10px;
+}
